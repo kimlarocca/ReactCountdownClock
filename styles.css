@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+	color: #fff;
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	background: url(http://www.kimlarocca.com/playground/ReactCountdownClock/background.jpg) no-repeat top center;
+	background-size: cover
+}
+.countdownClock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+h1, h2 {
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+}
+h1 {
+	font-size: 45px;
+}
+h2 {
+	font-size: 25px;
+	margin-bottom: 40px;
+	border-bottom: #fff solid 2px
+}
+.clockWrapper {
+	display: flex;
+	flex-direction: column;
+}
+.numbers, .labels {
+	display: flex;
+	flex-direction: row;
+}
+.numbers span, .labels span {
+	display: flex;
+	width: 125px;
+	justify-content: center;
+	flex-grow: 1;
+	margin: 0 10px;
+}
+.numbers span {
+	font-size: 45px;
+	padding: 20px 0;
+	background: rgba(0,0,0,.5);
+}
+.labels span {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	color: #fff;
+	text-shadow: 1px 1px 0 #00163b,  -1px -1px 0 #00163b,  1px -1px 0 #00163b,  -1px 1px 0 #00163b,  1px 1px 0 #00163b;
+}
+
+@media all and (max-width: 600px) {
+.numbers span, .labels span {
+	display: flex;
+	width: 65px;
+	margin: 0 5px;
+}
+.numbers span {
+	font-size: 30px;
+}
+}
